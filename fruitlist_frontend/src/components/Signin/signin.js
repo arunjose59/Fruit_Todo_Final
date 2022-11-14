@@ -5,10 +5,10 @@ import { useState } from "react";
 function Signin(props) {
   const [username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
-  let { setAuth } = props;
+
   const navigate = useNavigate();
   function submit() {
-    if (username && Password) {
+    if (username==="carestack" && Password==="abc12345") {
       localStorage.setItem("auth", true);
 
       navigate("/list");
